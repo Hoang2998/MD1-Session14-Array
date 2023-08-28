@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let number = []
+        // let count = 0;
+        // do{
+        //     let num = +prompt("moi nhap vao ki tu")
+        //     if(isNaN(num)==false){
+        //     number.push(num)
+        //     }
+        // count ++;
+        // }while(count<10)
+        // console.log(`co tong ${number.length} ki tu so trong mang`)
+        
+        let num =+prompt("ban muon nhap bao nhieu ki tu")
+        let numner =[];
+        let count = 0
+        for(let i=0;i<num;i++){
+            let number = prompt("moi nhap ki tu ")
+            numner.push(number);
+        }
+        console.log(numner);
+        for(let i=0;i<numner.length;i++){
+            if(isNaN(numner[i])==false){
+                count++;
+            }
+        }
+        console.log(`co ${count} ki tu so `);
+    </script>
+</body>
+</html>

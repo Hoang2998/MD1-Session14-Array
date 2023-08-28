@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 0;
+        let number = [];
+        let count = 0;
+        do {
+                let num = +prompt(`moi nhap so nguyen ${x + 1}`)
+                if (Number.isInteger(num)) {
+                    number[x] = num;
+                    x++;
+                    count++;
+                } else { alert("moi nhap lai so nguyen"); }
+            } while (count < 10)
+            for (x = 0; x < number.length; x++) {
+                if (number[x] > 10) {
+                    console.log("cac so nguyen lon hon 10 :", number[x]);
+                }
+            }
+    </script>
+</body>
+</html>
